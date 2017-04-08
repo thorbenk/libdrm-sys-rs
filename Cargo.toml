@@ -1,0 +1,12 @@
+[package]
+name = "libdrm-sys"
+version = "0.1.0"
+description = "Native bindings to the libdrm library"
+repository = "https://github.com/devurandom/libdrm-sys-rs"
+authors = ["Dennis Schridde <devurandom@gmx.net>"]
+license = "MIT"
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.22.0"
+pkg-config = "0.3"
