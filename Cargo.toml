@@ -1,6 +1,6 @@
 [package]
 name = "libdrm-sys"
-version = "0.1.1"
+version = "0.1.2"
 description = "Native bindings to the libdrm library"
 repository = "https://github.com/devurandom/libdrm-sys-rs"
 authors = ["Dennis Schridde <devurandom@gmx.net>"]
