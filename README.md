@@ -4,7 +4,7 @@
 
 Native bindings to the libdrm library.
 
-This package contains only the raw C bindings, without a convenience layer.
+This package contains only the raw C bindings. If you want something more convenient, please have a look at libdrm-sweet.
 
 ## Requirements
 
