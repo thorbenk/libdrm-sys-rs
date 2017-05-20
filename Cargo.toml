@@ -1,6 +1,6 @@
 [package]
 name = "libdrm-sys"
-version = "0.1.5"
+version = "0.2.0"
 description = "Native bindings to the libdrm library"
 repository = "https://github.com/devurandom/libdrm-sys-rs"
 authors = ["Dennis Schridde <devurandom@gmx.net>"]
@@ -10,6 +10,13 @@ categories = ["hardware-support", "os", "rendering"]
 build = "build.rs"
 readme = "README.md"
 license-file = "LICENSE"
+
+[features]
+default = ["version_2_4_58"]
+
+# Remember to also adjust libdrm_min_version in build.rs
+version_2_4_58 = []
+version_2_4_67 = ["version_2_4_58"]
 
 [build-dependencies]
 bindgen = "0.25"

@@ -7,8 +7,17 @@ use std::path::PathBuf;
 fn main() {
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
 
+	let libdrm_min_version =
+        if cfg!(feature="version_2_4_67") {
+            "2.4.67"
+        } else if cfg!(feature="version_2_4_58") {
+            "2.4.58"
+        } else {
+            panic!("Selecting a version_* feature is mandatory")
+        };
+
     let libdrm = pkg_config::Config::new()
-        .atleast_version("2.4.67")
+        .atleast_version(libdrm_min_version)
         .probe("libdrm")
         .expect("Unable to find libdrm");
 
