@@ -8,7 +8,7 @@ fn main() {
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
 
     let libdrm = pkg_config::Config::new()
-        .atleast_version("2.4.77")
+        .atleast_version("2.4.67")
         .probe("libdrm")
         .expect("Unable to find libdrm");
 
