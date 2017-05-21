@@ -9,7 +9,8 @@ This package contains only the raw C bindings. If you want something more conven
 
 ## Requirements
 
-* libdrm >= 2.4.67
+* libdrm >= 2.4.58
+  - You can select higher minimum versions by setting e.g. `--feature=version_2_4_67`
   - `libdrm-dev` on Debian/Ubuntu
 * C headers
   - `build-essential` on Debian/Ubuntu
