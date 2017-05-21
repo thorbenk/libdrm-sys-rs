@@ -10,7 +10,6 @@ keywords = ["libdrm", "drm", "gpu", "linux"]
 categories = ["hardware-support", "os", "rendering"]
 build = "build.rs"
 readme = "README.md"
-license-file = "LICENSE"
 
 [features]
 default = ["version_2_4_58"]
