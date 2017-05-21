@@ -3,7 +3,7 @@ dist: zesty
 language: rust
 
 rust:
-    -stable
+    - stable
 
 cache:
     cargo: true
