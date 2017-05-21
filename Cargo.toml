@@ -3,6 +3,7 @@ name = "libdrm-sys"
 version = "0.2.0"
 description = "Native bindings to the libdrm library"
 repository = "https://github.com/devurandom/libdrm-sys-rs"
+documentation = "https://docs.rs/libdrm-sys"
 authors = ["Dennis Schridde <devurandom@gmx.net>"]
 license = "MIT"
 keywords = ["libdrm", "drm", "gpu", "linux"]
