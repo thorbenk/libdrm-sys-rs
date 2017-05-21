@@ -1,0 +1,17 @@
+dist: zesty
+
+language: rust
+rust:
+    -stable
+
+cache:
+    cargo: true
+
+addons:
+    apt:
+        - build-essential
+        - libdrm-dev
+        - clang
+
+script:
+    - cargo build
