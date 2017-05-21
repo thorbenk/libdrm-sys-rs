@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: /libdrm-sys
+    docker:
+    - image: quay.io/devurandom/rust-dev:debian9-4
+    steps:
+    - checkout
+    - run:
+        name: Install build / test dependencies
+        command: |
+          apt-get -y update
+          apt-get -y install pkg-config libdrm-dev
+    - run:
+        name: Run matrix build
+        command: |
+          export RUST_BACKTRACE=1
+          ./utils/circleci-matrix.sh --config .circleci/matrix.yml
+    - store_test_results:
+        path: test-reports/
