@@ -12,3 +12,4 @@ This package contains only the raw C bindings. If you want something more conven
   - `libdrm-dev` on Debian/Ubuntu
 * C headers
   - `build-essential` on Debian/Ubuntu
+* pkg-config
